@@ -1,0 +1,75 @@
+@import '../../styles/variables.scss';
+
+.main {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+    @media (max-width: map-get($breakpoints, md)) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.row {
+    flex-direction: row;
+}
+
+.wrapperText {
+    margin: 40px;
+    margin-bottom: 100px;
+
+    @media (max-width: map-get($breakpoints, md)) {
+        margin: 20px 0 0 0;
+
+    }
+
+    @media (max-width: map-get($breakpoints, xxl)) {
+        margin-top: 20px;
+    }
+
+}
+
+
+.image {
+    width: 633px;
+    margin-left: 40px;
+
+    @media (max-width: map-get($breakpoints, xxl)) {
+        width: 550px;
+        margin: 0px;
+        margin-bottom: 140px;
+    }
+
+    @media (max-width: map-get($breakpoints, md)) {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+}
+
+.icon {
+    display: flex;
+}
+
+.detill {
+    margin: 10px 5px;
+}
+
+.customButton {
+    padding: 3px 20px;
+    font-weight: bold;
+    border: none;
+    color: white;
+    font-size: 30px;
+    border-radius: 57px;
+    background: linear-gradient(176.36deg, #FC01A2 -112.26%, #8E25F7 130.06%, #00E4E1 293.13%);
+    width: 100%;
+    cursor: pointer;
+    
+    &:hover {
+        transform: scale(1.05)
+    }
+}

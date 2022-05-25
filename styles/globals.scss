@@ -1,0 +1,83 @@
+@import './variables.scss';
+
+@font-face {
+  font-family: SukhumvitSet;
+  src: url("/fonts/SukhumvitSet.ttf");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: SukhumvitSet;
+}
+
+a {
+  color: #007aff;
+  text-decoration: none;
+  
+}
+
+* {
+  box-sizing: border-box;
+  font-family: SukhumvitSet !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 64px;
+
+    @media (max-width: map-get($breakpoints, md)) {
+        font-size: 30px;
+    }
+}
+
+h2 {
+    font-size: 60px;
+
+    @media (max-width: map-get($breakpoints, md)) {
+        font-size: 28px;
+    }
+}
+
+h3 {
+    font-size: 40px;
+
+    @media (max-width: map-get($breakpoints, md)) {
+        font-size: 26px;
+    }
+}
+
+h4 {
+    font-size: 30px;
+
+    @media (max-width: map-get($breakpoints, md)) {
+        font-size: 24px;
+    }
+}
+
+h5 {
+    font-size: 24px;
+
+    @media (max-width: map-get($breakpoints, md)) {
+        font-size: 20px;
+    }
+}
+
+h6 {
+    // -> title3
+    font-size: 20px;
+
+    @media (max-width: map-get($breakpoints, md)) {
+        font-size: 18px;
+    }
+}

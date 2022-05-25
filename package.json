@@ -1,0 +1,49 @@
+{
+  "name": "nft-fanclub",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.5.9",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.4.1",
+    "@mui/lab": "^5.0.0-alpha.69",
+    "@mui/material": "^5.4.1",
+    "@mui/x-data-grid": "^5.5.1",
+    "axios": "^0.26.0",
+    "dayjs": "^1.10.7",
+    "formik": "^2.2.9",
+    "graphql": "^16.3.0",
+    "js-cookie": "^3.0.1",
+    "next": "12.0.10",
+    "next-sitemap": "1.6.133",
+    "react": "17.0.2",
+    "react-confetti": "^6.0.1",
+    "react-dom": "17.0.2",
+    "react-intersection-observer": "^8.33.1",
+    "react-query": "^3.34.15",
+    "react-redux": "^8.0.1",
+    "react-responsive-carousel": "^3.2.23",
+    "react-share": "^4.4.0",
+    "react-spring": "^9.4.3",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1",
+    "sass": "^1.51.0",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^3.0.1",
+    "@types/node": "17.0.17",
+    "@types/react": "17.0.39",
+    "eslint": "8.9.0",
+    "eslint-config-next": "12.0.10",
+    "prettier": "^2.5.1",
+    "typescript": "4.5.5"
+  }
+}

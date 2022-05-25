@@ -1,0 +1,353 @@
+@import '../../styles/variables.scss';
+
+.templateSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px 40px;
+
+    @media (max-width: map-get($breakpoints, md)) {
+        padding: 20px 5px 40px;
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+    @media (max-width: map-get($breakpoints, md)) {
+        flex-direction: column;
+    }
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.customButton {
+    font-size: 1rem;
+    padding: 10px 20px;
+    // max-width: 415px;
+    width: 100%;
+    font-weight: bold;
+    bottom: 0;
+    border: none;
+    color: white;
+    font-size: 30px;
+    border-radius: 38px;
+    background: linear-gradient(91.12deg, #fc01a2 -6.41%, #8e25f7 66.74%, #7DCDD5);
+    cursor: pointer;
+    
+    &:hover {
+        transform: scale(1.05)
+    }
+
+    @media (max-width: map-get($breakpoints, md)) {
+        font-size: 24px;
+    }
+}
+
+.getCloserToYourSection {
+    @extend .templateSection;
+    background-image: url("/images/getCloserToYourSection.png");
+
+    .leftBox {
+        // flex-basis: 40%;
+        min-width: 450px;
+        align-items: flex-end;
+
+        @media (max-width: map-get($breakpoints, md)) {
+            align-items: center;
+            min-width: auto;
+        }
+
+        .image {
+            object-fit: contain;
+            height: 70px;
+
+            @media (max-width: map-get($breakpoints, sm)) {
+                height: 55px;
+            }
+        }
+
+        .line {
+            position: absolute;
+            width: 40%;
+            height: 1px;
+            right: 0 !important;
+            border-top: 1px solid #fff;
+        }
+
+        h4 {
+            color: white;
+            margin: 20px 0 0;
+            line-height: 1;
+        }
+
+        h2 {
+            color: #5CC4CB;
+            margin: 40px 0 0;
+        }
+    }
+
+    .rightBox {
+        background-color: white;
+        border-radius: 20px;
+        padding: 20px 0 0 0;
+
+        .wrapperCarousel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            img {
+                width: 100%;
+                height: 250px;
+                border-radius: 0 0 20px 20px;
+                object-fit: cover;
+                user-select: none;
+
+                @media (min-width: map-get($breakpoints, md)) {
+                    height: 320px;
+                }
+            }
+        }
+    }
+}
+
+.funToEarnSection {
+    @extend .templateSection;
+    background-image: linear-gradient(#E158A0, #A473B1, #899CC1, #7DCDD5);
+
+    .logo {
+        object-fit: contain;
+        height: 35px;
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin: 40px 0 20px;
+
+        @media (max-width: map-get($breakpoints, sm)) {
+            flex-direction: column;
+        }
+    }
+
+    .card {
+        background-color: white;
+        border-radius: 20px;
+        max-height: 400px;
+
+        .wrapperCarouselFuntoEarn {
+            justify-content: center;
+            align-items: center;
+
+            .imageCarouselFuntoEarn {
+                flex-basis: 45%;
+                padding: 20px 50px;
+
+                @media (max-width: map-get($breakpoints, md)) {
+                    display: none;
+                }
+
+                img {
+                    height: 300px;
+                    object-fit: contain;
+                }
+            }
+
+            .textCarouselFuntoEarn {
+                flex-basis: 45%;
+                align-items: center;
+                justify-content: center;
+                padding: 20px 30px;
+                min-height: 340px;
+
+                @media (max-width: map-get($breakpoints, md)) {
+                    min-height: 280px;
+                    padding: 20px 5px;
+                }
+            }
+
+            .fitImage {
+                height: 340px;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+
+                @media (max-width: map-get($breakpoints, md)) {
+                    height: 280px;
+                }
+            }
+        }
+    }
+}
+
+.fandomSection {
+    @extend .templateSection;
+    background-image: linear-gradient(#4B8BA4, #A72F7F, #5C3F86);
+
+    h2 {
+        text-align: center !important;
+        color: #20094B !important;
+        margin: 30px 0 !important;
+    }
+
+    .groupText {
+        display: flex;
+        flex-basis: 65%;
+        flex-direction: column;
+        gap: 20px;
+
+        .wrapperText {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        span {
+            font-size: 13px;
+            font-weight: normal;
+            display: flex;
+            align-items: center;
+            color: white;
+            margin: 10px;
+        }
+
+        h5 {
+            align-items: center;
+            color: white;
+        }
+    }
+
+    .groupImage {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+
+        @media (max-width: map-get($breakpoints, md)) {
+            display: none;
+        }
+
+        .imageFandom {
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.artistsSection {
+    @extend .templateSection;
+    @extend .fandomSection;
+    background-image: linear-gradient(90deg, #31256B, #231144);
+
+    h2 {
+        text-align: center !important;
+        color: #FF3EA8 !important;
+        margin: 30px 0 !important;
+    }
+
+    .groupImage {
+        max-width: 250px;
+    }
+
+    .card {
+        background-color: white;
+        border-radius: 20px;
+        max-height: 200px;
+        max-width: 250px;
+
+        .fitImage {
+            height: 200px;
+            width: 250px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    }
+
+}
+
+.decentralizedSection {
+    @extend .templateSection;
+    background-image: linear-gradient(#E158A0, #A473B1, #899CC1, #7DCDD5);
+
+    h1 {
+        text-align: center !important;
+        color: #20094B !important;
+        margin: 30px 0 0 !important;
+    }
+
+    h2 {
+        text-align: center !important;
+        color: #20094B !important;
+        margin: 0 0 30px !important;
+    }
+
+    .imageDecentralized {
+        border-radius: 10px;
+        height: 600px;
+        object-fit: cover;
+        margin: 40px auto 0;
+    }
+}
+
+.totalSupplySection {
+    @extend .templateSection;
+    background-image: linear-gradient(90deg, #231144, #31256B, #231144, #31256B);
+
+    h2 {
+        margin: 30px 0 0 !important;
+        text-align: center !important;
+        color: white;
+    }
+
+    h3 {
+        text-align: center !important;
+        color: #DE3CA6;
+        margin: 0 0 40px !important;
+    }
+}
+
+.teamSection {
+    @extend .templateSection;
+    background-image: linear-gradient(90deg, #231144, #31256B, #231144, #31256B);
+    padding-bottom: 80px;
+
+    h2 {
+        text-align: center !important;
+        color: white;
+        margin: 0 0 40px !important;
+    }
+}
+
+.roadmapSection {
+    @extend .templateSection;
+    background-image: linear-gradient(90deg, #231144, #31256B, #231144, #31256B);
+
+    .imageRoadMap {
+        max-width: 1120px;
+        max-height: 560px;
+        margin: 0 auto;
+        width: 80%;
+
+        @media (max-width: map-get($breakpoints, md)) {
+            width: 100%
+        }
+    }
+}
+
+.container {
+    width: 100%;
+
+    h5 {
+        font-weight: normal;
+    }
+}

@@ -1,0 +1,38 @@
+const commoni18n = {
+  en: {
+    REGISTER: "Register",
+    LOGIN: "LogIn",
+    HOME: "Home",
+    ABOUT_US: "About us",
+    AIRDROP: "Airdrop",
+    NFT_FANCLUB: "NFT Fanclub",
+    CREATE_BY_DATABILITY: "Create by Datability",
+    SUBINFO_1: "FANDOM APPLICATION 7/1 Watcharaphon Road,Tha Raeng , Bang Khen District, Bangkok 10220",
+    CONTACT: "CONTACT",
+    CATEGORIES: "CATEGORIES",
+    LANGUAGE: "LANGUAGE",
+    APPLICATION: "APPLICATION",
+    ACCOUNT: "Account",
+    WALLET: "Wallet",
+    CHANGE_PASSWORD: "Change Password",
+  },
+  th: {
+    REGISTER: "สมัครสมาชิก",
+    LOGIN: "เข้าสู่ระบบ",
+    HOME: "Home",
+    ABOUT_US: "About us",
+    AIRDROP: "Airdrop",
+    NFT_FANCLUB: "NFT Fanclub",
+    CREATE_BY_DATABILITY: "Create by Datability",
+    SUBINFO_1: "FANDOM APPLICATION 7/1 Watcharaphon Road,Tha Raeng , Bang Khen District, Bangkok 10220",
+    CONTACT: "CONTACT",
+    CATEGORIES: "CATEGORIES",
+    LANGUAGE: "LANGUAGE",
+    APPLICATION: "APPLICATION",
+    ACCOUNT: "Account",
+    WALLET: "Wallet",
+    CHANGE_PASSWORD: "Change Password",
+  },
+};
+
+export default commoni18n;
