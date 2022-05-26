@@ -81,11 +81,11 @@ const PageLayout: React.FC<PageLayoutProps> = ({ children }: any) => {
         <meta property="og:description" content="Register now. Free 100 coin" />
         <meta
           property="og:image"
-          content={"www.fandom.co.th/images/ogImageNew.png"}
+          content={"https://www.fandom.co.th/images/ogImageNew.png"}
         />
         <meta
           property="og:image:secure_url"
-          content={"www.fandom.co.th/images/ogImageNew.png"}
+          content={"https://www.fandom.co.th/images/ogImageNew.png"}
         />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
