@@ -2,9 +2,9 @@ const homePagei18n = {
   en: {
     HERO_TEXT_1: "GET CLOSER TO YOUR",
     HERO_TEXT_2: "FAVOURITE ARTISTS",
-    FREE_COIN:"FREE 100 COIN", 
-    REGISTER_NOW: "Register Now! - Free 100 FC Coin",
-    INVITE_FRIEND: "Invite Friends (Get 25 FC Coin)",
+    FREE_COIN:"FREE 100 STARS", 
+    REGISTER_NOW: "Register Now! - Free 100 STARS",
+    INVITE_FRIEND: "Invite Friends (Get 25 STARS)",
     APP_RECOMMENDATION_HEADER_1: "Lorem Ipsum",
     APP_RECOMMENDATION_DESCRIPTION_1:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet cursus dolor lectus rhoncus luctus mi eu tempor semper.",
@@ -22,9 +22,9 @@ const homePagei18n = {
   th: {
     HERO_TEXT_1: "ได้ใกล้ชิด",
     HERO_TEXT_2: "กับศิลปินที่คุณชื่นชอบ",
-    FREE_COIN:"รับฟรี 100 เหรียญ",
-    REGISTER_NOW: "สมัครตอนนี้! - รับฟรี 100 เหรียญเอฟซี",
-    INVITE_FRIEND: "เชิญเพื่อน (ได้รับ 25 เหรียญเอฟซี)",
+    FREE_COIN:"รับฟรี 100 Stars",
+    REGISTER_NOW: "สมัครตอนนี้! - รับฟรี 100 Stars",
+    INVITE_FRIEND: "เชิญเพื่อน (ได้รับ 25 Stars)",
     APP_RECOMMENDATION_HEADER_1: "Lorem Ipsum",
     APP_RECOMMENDATION_DESCRIPTION_1:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet cursus dolor lectus rhoncus luctus mi eu tempor semper.",

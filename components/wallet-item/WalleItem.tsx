@@ -39,7 +39,7 @@ const WalletItem: React.FC<WalletItemProps> = ({ balance, walletAddress }) => {
     <WalletItemCard>
       <WalletInfoSection>
         <WalletHeaderWrapper>
-          <Typography variant="h5">Wallet</Typography>{" "}
+          <Typography variant="h5">Balance</Typography>{" "}
           <AccountBalanceWalletOutlinedIcon />
         </WalletHeaderWrapper>
         <WalletBalanceWrapper>
@@ -47,7 +47,7 @@ const WalletItem: React.FC<WalletItemProps> = ({ balance, walletAddress }) => {
             {formattedBalance.split(".")[0]}
           </Typography>
           <Typography variant="body1" sx={{ paddingBottom: 0.5 }}>
-            .{formattedBalance.split(".")[1]} FC Coin
+            .{formattedBalance.split(".")[1]} Stars
           </Typography>
         </WalletBalanceWrapper>
         <AddressSectionWrapper>

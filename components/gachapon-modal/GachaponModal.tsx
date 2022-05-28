@@ -52,9 +52,8 @@ const GashaponModalPage: React.FC<GashaponModalProps> = ({
               />
               <div className={styles.groupText}>
                 <p className={styles.detillText}>
-                  กดเลย! แลกรับ NFT "BLOODY BUNNY : Limited NEON EDITION"
-                  เมื่อสะสม NFT "BLOODY BUNNY the 1st BOX " ครบคอลเลกชัน
-                  รีบหน่อย! มีแค่ 45,000 ชิ้นเท่านั้นนะ
+                กดเลย! แลกรับรูปคอลเลกชัน Wish Me Random Card “Wish me Limited Edition Card” 
+only 29,000 pcs.
                 </p>
                 <p className={styles.detillStotk}>
                   จำนวนสินค้าเหลือ{" "}
@@ -76,17 +75,17 @@ const GashaponModalPage: React.FC<GashaponModalProps> = ({
                   className={styles.buttonStotk}
                   type="button"
                 >
-                  <p>สุ่ม</p>
+                  <p>Random</p>
                   <div className={styles.textF}>
                     <p>{gashaponCollectionInfo?.price}</p>{" "}
-                    <p className={styles.textP}>Fandom Coin</p>
+                    <p className={styles.textP}>Stars</p>
                   </div>
                 </LoadingButton>
 
                 <p className={styles.detillStotkP}>
-                  จำนวนเงินในกระเป๋า{" "}
-                  {numberFormmater(tokenBalance)} Fandom
-                  Coin
+                  {/* จำนวน Stars{" "} */}
+                  Balance{" "}
+                  {numberFormmater(tokenBalance)} Stars
                 </p>
               </div>
             </div>

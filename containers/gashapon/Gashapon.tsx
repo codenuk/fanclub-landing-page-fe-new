@@ -83,18 +83,17 @@ const Gashapon: React.FC<GashaponProps> = () => {
         />
         <div className={styles.wrapperText}>
           <h5 className={styles.row}>
-            กดเลย! แลกรับ NFT "BLOODY BUNNY : Limited NEON EDITION" เมื่อสะสม
-            NFT "BLOODY BUNNY the 1st BOX " ครบคอลเลกชัน รีบหน่อย! มีแค่ 45,000
-            ชิ้นเท่านั้นนะ
+          กดเลย! แลกรับรูปคอลเลกชัน Wish Me Random Card “Wish me Limited Edition Card” 
+only 29,000 pcs.
           </h5>
           <div className={styles.icon}>
             <img src="/images/icon-gashapon.svg" alt="/images/gashapon.svg" />
             <p className={styles.detill}>Wish Me</p>
           </div>
           <p className={styles.detill}>
-            ระยะเวลา: 22 เม.ย. 22 13:00 - 22 เม.ย. 23 13:00
+          Period: 1 Jun 2022 - 1 Dec 2022
           </p>
-          <p className={styles.detill}>ระดับความหายาก</p>
+          {/* <p className={styles.detill}>ระดับความหายาก</p> */}
           {!isAuth && isInit ? (
             <button
               onClick={() => router.push("/login")}
@@ -109,7 +108,7 @@ const Gashapon: React.FC<GashaponProps> = () => {
               className={styles.customButton}
               type="button"
             >
-              สุ่มเลย
+Random Now!
             </button>
           )}
         </div>

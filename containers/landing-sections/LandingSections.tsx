@@ -29,7 +29,7 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
               </div>
               <h4>GET CLOSER TO YOUR</h4>
               <h4>FAVOURITE ARTISTS</h4>
-              <h2>FREE 100 COIN</h2>
+              <h2>FREE 100 STARS</h2>
               {!isAuth && isInit && (
                 <button
                   className={styles.customButton}
@@ -147,98 +147,98 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
               <img src="/images/logoBlack.png" className={styles.logo} />
               <h4>{`"fun to earn"`}</h4>
             </div>
-            <Carousel
+            {/* <Carousel
               showArrows={false}
               autoPlay={true}
               infiniteLoop={true}
               showStatus={false}
               showThumbs={false}
-            >
-              <div className={styles.card}>
+            > */}
+            <div className={styles.card}>
+              <div
+                className={`${styles.wrapperCarouselFuntoEarn} ${styles.row}`}
+              >
                 <div
-                  className={`${styles.wrapperCarouselFuntoEarn} ${styles.row}`}
+                  className={`${styles.column} ${styles.textCarouselFuntoEarn}`}
                 >
-                  <div
-                    className={`${styles.column} ${styles.textCarouselFuntoEarn}`}
-                  >
-                    <img
-                      src="/images/logoBlack.png"
-                      className={styles.logo}
-                      style={{ marginBottom: "10px" }}
-                    />
-                    <h5 style={{ textAlign: "center" }}>
-                      <b>Fun and Earn while you interact</b>
-                    </h5>
-                    <h5 style={{ marginBottom: "30px", textAlign: "center" }}>
-                      <b>with your loved one.</b>
-                    </h5>
-                    <h5 style={{ textAlign: "center" }}>
-                      Activities for fans to support and
-                    </h5>
-                    <h5 style={{ textAlign: "center" }}>
-                      get closer to their favorite artists.
-                    </h5>
-                  </div>
-                  <div
-                    className={`${styles.column} ${styles.imageCarouselFuntoEarn}`}
-                  >
-                    <img
-                      src="/images/funToEarnSection4.png"
-                      alt={"/images/funToEarnSection4.png"}
-                    />
-                  </div>
+                  <img
+                    src="/images/logoBlack.png"
+                    className={styles.logo}
+                    style={{ marginBottom: "10px" }}
+                  />
+                  <h5 style={{ textAlign: "center" }}>
+                    <b>Fun and Earn while you interact</b>
+                  </h5>
+                  <h5 style={{ marginBottom: "30px", textAlign: "center" }}>
+                    <b>with your loved one.</b>
+                  </h5>
+                  <h5 style={{ textAlign: "center" }}>
+                    Activities for fans to support and
+                  </h5>
+                  <h5 style={{ textAlign: "center" }}>
+                    get closer to their favorite artists.
+                  </h5>
+                </div>
+                <div
+                  className={`${styles.column} ${styles.imageCarouselFuntoEarn}`}
+                >
+                  <img
+                    src="/images/funToEarnSection4.png"
+                    alt={"/images/funToEarnSection4.png"}
+                  />
                 </div>
               </div>
-              <CardOnlyImage img="/images/funToEarnSection5.png" />
-              <CardOnlyImage img="/images/funToEarnSection6.png" />
-            </Carousel>
+            </div>
+            {/* <CardOnlyImage img="/images/funToEarnSection5.png" />
+              <CardOnlyImage img="/images/funToEarnSection6.png" /> */}
+            {/* </Carousel> */}
 
             <div className={styles.title}>
               <img src="/images/logoBlack.png" className={styles.logo} />
               <h4>{`"fun to earn"`}</h4>
             </div>
-            <Carousel
+            {/* <Carousel
               showArrows={false}
               autoPlay={true}
               infiniteLoop={true}
               showStatus={false}
               showThumbs={false}
-            >
-              <div className={styles.card}>
+            > */}
+            <div className={styles.card}>
+              <div
+                className={`${styles.wrapperCarouselFuntoEarn} ${styles.row}`}
+              >
                 <div
-                  className={`${styles.wrapperCarouselFuntoEarn} ${styles.row}`}
+                  className={`${styles.column} ${styles.imageCarouselFuntoEarn}`}
                 >
-                  <div
-                    className={`${styles.column} ${styles.imageCarouselFuntoEarn}`}
-                  >
-                    <img
-                      src="/images/funToEarnSection7.png"
-                      alt={"/images/funToEarnSection7.png"}
-                    />
-                  </div>
-                  <div
-                    className={`${styles.column} ${styles.textCarouselFuntoEarn}`}
-                  >
-                    <img
-                      src="/images/logoBlack.png"
-                      className={styles.logo}
-                      style={{ marginBottom: "20px" }}
-                    />
-                    <h5 style={{ marginBottom: "30px", textAlign: "center" }}>
-                      <b>Collect artist's unique NFT.</b>
-                    </h5>
-                    <h5 style={{ textAlign: "center" }}>
-                      Enjoy your happy moment with
-                    </h5>
-                    <h5 style={{ textAlign: "center" }}>
-                      your favorite artist's NFT
-                    </h5>
-                  </div>
+                  <img
+                    src="/images/funToEarnSection7.png"
+                    alt={"/images/funToEarnSection7.png"}
+                  />
+                </div>
+                <div
+                  className={`${styles.column} ${styles.textCarouselFuntoEarn}`}
+                >
+                  <img
+                    src="/images/logoBlack.png"
+                    className={styles.logo}
+                    style={{ marginBottom: "20px" }}
+                  />
+                  <h5 style={{ marginBottom: "30px", textAlign: "center" }}>
+                    <b>Collect artist's unique NFT.</b>
+                  </h5>
+                  <h5 style={{ textAlign: "center" }}>
+                    Enjoy your happy moment with
+                  </h5>
+                  <h5 style={{ textAlign: "center" }}>
+                    your favorite artist's NFT
+                  </h5>
                 </div>
               </div>
-              <CardOnlyImage img="/images/funToEarnSection8.png" />
-              <CardOnlyImage img="/images/funToEarnSection9.png" />
-            </Carousel>
+            </div>
+            {/* <CardOnlyImage img="/images/funToEarnSection8.png" />
+              <CardOnlyImage img="/images/funToEarnSection9.png" /> */}
+            {/* </Carousel> */}
 
             <div className={styles.title}>
               <img src="/images/logoBlack.png" className={styles.logo} />
@@ -322,7 +322,7 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
                 </div>
               </div>
               <CardOnlyImage img="/images/funToEarnSection11.png" />
-              <CardOnlyImage img="/images/funToEarnSection12.png" />
+              {/* <CardOnlyImage img="/images/funToEarnSection12.png" /> */}
             </Carousel>
           </div>
         </ContentWrapper>
@@ -335,10 +335,7 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
               className={styles.row}
               style={{ justifyContent: "center", margin: "20px 0 0" }}
             >
-              <div
-                className={styles.groupText}
-                style={{ justifyContent: "center" }}
-              >
+              <div className={styles.groupText}>
                 <div className={styles.wrapperText}>
                   <span>◯</span>
                   <div>
@@ -358,24 +355,24 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
                 </div>
               </div>
               <div className={styles.groupImage}>
-                <Carousel
+                {/* <Carousel
                   showArrows={false}
                   autoPlay={true}
                   infiniteLoop={true}
                   showStatus={false}
                   showThumbs={false}
-                >
-                  <img
-                    alt="/images/fandom1.png"
-                    src="/images/fandom1.png"
-                    className={styles.imageFandom}
-                  />
-                  <img
+                > */}
+                <img
+                  alt="/images/fandom1.png"
+                  src="/images/fandom1.png"
+                  className={styles.imageFandom}
+                />
+                {/* <img
                     alt="/images/fandom2.png"
                     src="/images/fandom2.png"
                     className={styles.imageFandom}
-                  />
-                </Carousel>
+                  /> */}
+                {/* </Carousel> */}
               </div>
             </div>
 
@@ -391,19 +388,7 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
                 <div className={styles.wrapperText}>
                   <span>◯</span>
                   <div>
-                    <h5>
-                      First-tier benefits include front-row events, free
-                      tickets, private meetings, secret content, and so on.
-                    </h5>
-                  </div>
-                </div>
-                <div className={styles.wrapperText}>
-                  <span>◯</span>
-                  <div>
-                    <h5>
-                      Earn token by using by using the 'watch to earn' and
-                      'share to earn' features.
-                    </h5>
+                    <h5>'watch to earn' and 'share to earn' features.</h5>
                   </div>
                 </div>
               </div>
@@ -411,24 +396,24 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
                 className={styles.groupImage}
                 style={{ justifyContent: "center" }}
               >
-                <Carousel
+                {/* <Carousel
                   showArrows={false}
                   autoPlay={true}
                   infiniteLoop={true}
                   showStatus={false}
                   showThumbs={false}
-                >
-                  <img
-                    alt="/images/fandom3.png"
-                    src="/images/fandom3.png"
-                    className={styles.imageFandom}
-                  />
-                  <img
+                > */}
+                <img
+                  alt="/images/fandom3.png"
+                  src="/images/fandom3.png"
+                  className={styles.imageFandom}
+                />
+                {/* <img
                     alt="/images/fandom4.png"
                     src="/images/fandom4.png"
                     className={styles.imageFandom}
                   />
-                </Carousel>
+                </Carousel> */}
               </div>
             </div>
 
@@ -448,24 +433,24 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
                 </div>
               </div>
               <div className={styles.groupImage}>
-                <Carousel
+                {/* <Carousel
                   showArrows={false}
                   autoPlay={true}
                   infiniteLoop={true}
                   showStatus={false}
                   showThumbs={false}
-                >
-                  <img
-                    alt="/images/fandom5.png"
-                    src="/images/fandom5.png"
-                    className={styles.imageFandom}
-                  />
-                  <img
+                > */}
+                <img
+                  alt="/images/fandom5.png"
+                  src="/images/fandom5.png"
+                  className={styles.imageFandom}
+                />
+                {/* <img
                     alt="/images/fandom6.png"
                     src="/images/fandom6.png"
                     className={styles.imageFandom}
                   />
-                </Carousel>
+                </Carousel> */}
               </div>
             </div>
           </div>
@@ -481,13 +466,13 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
               style={{ justifyContent: "center", margin: "20px 0 0" }}
             >
               <div className={styles.groupImage}>
-                <Carousel
+                {/* <Carousel
                   showArrows={false}
                   autoPlay={true}
                   infiniteLoop={true}
                   showStatus={false}
                   showThumbs={false}
-                >
+                > */}
                   <div className={styles.card}>
                     <img
                       src={"/images/artistsSection1.png"}
@@ -495,14 +480,14 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
                       className={styles.fitImage}
                     />
                   </div>
-                  <div className={styles.card}>
+                  {/* <div className={styles.card}>
                     <img
                       src={"/images/artistsSection2.png"}
                       alt={"/images/artistsSection2.png"}
                       className={styles.fitImage}
                     />
                   </div>
-                </Carousel>
+                </Carousel> */}
               </div>
               <div className={styles.groupText}>
                 <div className={styles.wrapperText}>
@@ -531,13 +516,13 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
               style={{ justifyContent: "center", margin: "40px 0 0" }}
             >
               <div className={styles.groupImage}>
-                <Carousel
+                {/* <Carousel
                   showArrows={false}
                   autoPlay={true}
                   infiniteLoop={true}
                   showStatus={false}
                   showThumbs={false}
-                >
+                > */}
                   <div className={styles.card}>
                     <img
                       src={"/images/artistsSection3.png"}
@@ -545,25 +530,16 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
                       className={styles.fitImage}
                     />
                   </div>
-                  <div className={styles.card}>
+                  {/* <div className={styles.card}>
                     <img
                       src={"/images/artistsSection4.png"}
                       alt={"/images/artistsSection4.png"}
                       className={styles.fitImage}
                     />
                   </div>
-                </Carousel>
+                </Carousel> */}
               </div>
-              <div
-                className={styles.groupText}
-                style={{ justifyContent: "center" }}
-              >
-                <div className={styles.wrapperText}>
-                  <span>◯</span>
-                  <h5>
-                    Earn unseen revenue forever with our NFT Gamification.
-                  </h5>
-                </div>
+              <div className={styles.groupText}>
                 <div className={styles.wrapperText}>
                   <span>◯</span>
                   <h5>
@@ -573,7 +549,7 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
                 </div>
                 <div className={styles.wrapperText}>
                   <span>◯</span>
-                  <h5>Usege-base billing models for a copyright license</h5>
+                  <h5>Usage-base billing models for a copyright license</h5>
                 </div>
               </div>
             </div>
@@ -587,9 +563,11 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
             <h2>secured platform</h2>
             <h5 style={{ textAlign: "center" }}>
               <strong>
-              Decentralized Peer-to-Peer entertainment and gamification platform{" "}
+                Decentralized Peer-to-Peer entertainment and gamification
+                platform{" "}
               </strong>
-              providing digital content, digitized activities between various artists and fans with secured digital assets via blockchain technology
+              providing digital content, digitized activities between various
+              artists and via blockchain technology
             </h5>
             <Carousel
               showArrows={false}
@@ -623,7 +601,7 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
           </div>
         </ContentWrapper>
       </section>
-      <section className={styles.totalSupplySection}>
+      {/* <section className={styles.totalSupplySection}>
         <ContentWrapper>
           <div className={styles.column}>
             <h2>Total Supply</h2>
@@ -631,7 +609,7 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
           </div>
           <TokenSupply />
         </ContentWrapper>
-      </section>
+      </section> */}
       <section className={styles.teamSection}>
         <ContentWrapper>
           <div className={styles.column}>
@@ -640,7 +618,7 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
           <TeamSection />
         </ContentWrapper>
       </section>
-      <section className={styles.roadmapSection}>
+      {/* <section className={styles.roadmapSection}>
         <ContentWrapper>
           <div className={styles.column}>
             <img
@@ -650,7 +628,7 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
             />
           </div>
         </ContentWrapper>
-      </section>
+      </section> */}
     </section>
   );
 };

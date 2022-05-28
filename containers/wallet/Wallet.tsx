@@ -27,7 +27,7 @@ const Wallet: React.FC<WalletProps> = () => {
         sx={{ marginTop: 2, display: "flex", flexDirection: "column", gap: 2 }}
       >
         <WalletItem walletAddress={address} balance={balance} />
-        <IncomingWallet title="Bitkub NEXT" />
+        {/* <IncomingWallet title="Bitkub NEXT" /> */}
       </ContentWrapper>
     </>
   );
