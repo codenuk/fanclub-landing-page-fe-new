@@ -27,13 +27,13 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
                 <img src="/images/logo.png" className={styles.image} />
                 <div className={styles.line}></div>
               </div>
-              <h4>GET CLOSER TO YOUR</h4>
-              <h4>FAVOURITE ARTISTS</h4>
-              <h2>FREE 100 STARS</h2>
+              <h4 className={styles.fontSizeFourtyEight}>GET CLOSER TO YOUR</h4>
+              <h4 className={styles.fontSizeFourtyEight}>FAVOURITE ARTISTS</h4>
+              <h1>FREE 100 STARS</h1>
               {!isAuth && isInit && (
                 <button
-                  className={styles.customButton}
-                  style={{ maxWidth: "415px" }}
+                  className={`${styles.customButton} ${styles.fontSizeFourtyEight}`}
+                  style={{ maxWidth: "500px" }}
                   type="button"
                   onClick={() => router.push("/sign-up")}
                 >
@@ -94,16 +94,26 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
                       className={styles.logo}
                       style={{ marginBottom: "20px" }}
                     />
-                    <h5 style={{ textAlign: "center" }}>
+                    <h5
+                      className={styles.fontSizeThreetyTwo}
+                      style={{ textAlign: "center" }}
+                    >
                       Connect artist and fans with the
                     </h5>
-                    <h5 style={{ textAlign: "center" }}>new concept</h5>
+                    <h5
+                      className={styles.fontSizeThreetyTwo}
+                      style={{ textAlign: "center" }}
+                    >
+                      new concept
+                    </h5>
                     <button
-                      className={styles.customButton}
+                      className={`${styles.customButton}`}
                       type="button"
                       style={{ marginTop: "20px" }}
                     >
-                      <h3>{'"fun to earn"'}</h3>
+                      <h3 className={`${styles.fontSizeFourtyEight}`}>
+                        {'"fun to earn"'}
+                      </h3>
                     </button>
                   </div>
                 </div>
@@ -120,13 +130,22 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
                       className={styles.logo}
                       style={{ marginBottom: "10px" }}
                     />
-                    <h5 style={{ marginBottom: "30px" }}>
+                    <h5
+                      className={styles.fontSizeThreetyTwo}
+                      style={{ marginBottom: "30px" }}
+                    >
                       <b>Fans Community</b>
                     </h5>
-                    <h5 style={{ textAlign: "center" }}>
+                    <h5
+                      className={styles.fontSizeThreetyTwo}
+                      style={{ textAlign: "center" }}
+                    >
                       Ultimately closed connection
                     </h5>
-                    <h5 style={{ textAlign: "center" }}>
+                    <h5
+                      className={styles.fontSizeThreetyTwo}
+                      style={{ textAlign: "center" }}
+                    >
                       with your artist in every moment.
                     </h5>
                   </div>
@@ -166,17 +185,17 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
                     className={styles.logo}
                     style={{ marginBottom: "10px" }}
                   />
-                  <h5 style={{ textAlign: "center" }}>
-                    <b>Fun and Earn while you interact</b>
+                  <h5
+                    className={styles.fontSizeThreetyTwo}
+                    style={{ marginBottom: "30px", textAlign: "center" }}
+                  >
+                    <b>Fun and Earn while you interact with your loved one.</b>
                   </h5>
-                  <h5 style={{ marginBottom: "30px", textAlign: "center" }}>
-                    <b>with your loved one.</b>
-                  </h5>
-                  <h5 style={{ textAlign: "center" }}>
-                    Activities for fans to support and
-                  </h5>
-                  <h5 style={{ textAlign: "center" }}>
-                    get closer to their favorite artists.
+                  <h5
+                    className={styles.fontSizeThreetyTwo}
+                    style={{ textAlign: "center" }}
+                  >
+                    Activities for fans to support and get closer to their favorite artists.
                   </h5>
                 </div>
                 <div
@@ -224,13 +243,22 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
                     className={styles.logo}
                     style={{ marginBottom: "20px" }}
                   />
-                  <h5 style={{ marginBottom: "30px", textAlign: "center" }}>
+                  <h5
+                    className={styles.fontSizeThreetyTwo}
+                    style={{ marginBottom: "30px", textAlign: "center" }}
+                  >
                     <b>Collect artist's unique NFT.</b>
                   </h5>
-                  <h5 style={{ textAlign: "center" }}>
+                  <h5
+                    className={styles.fontSizeThreetyTwo}
+                    style={{ textAlign: "center" }}
+                  >
                     Enjoy your happy moment with
                   </h5>
-                  <h5 style={{ textAlign: "center" }}>
+                  <h5
+                    className={styles.fontSizeThreetyTwo}
+                    style={{ textAlign: "center" }}
+                  >
                     your favorite artist's NFT
                   </h5>
                 </div>
@@ -263,50 +291,47 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
                       className={styles.logo}
                       style={{ marginBottom: "10px" }}
                     />
-                    <h5 style={{ textAlign: "center" }}>
+                    <h5
+                      className={styles.fontSizeThreetyTwo}
+                      style={{ textAlign: "center" }}
+                    >
                       <b>Have a good time with</b>
                     </h5>
-                    <h5 style={{ marginBottom: "30px", textAlign: "center" }}>
+                    <h5
+                      className={styles.fontSizeThreetyTwo}
+                      style={{ marginBottom: "30px", textAlign: "center" }}
+                    >
                       <b>your favorite artist.</b>
                     </h5>
                     <div>
                       <h5
+                        className={styles.fontSizeThreetyTwo}
                         style={{
                           display: "flex",
                           alignItems: "center",
                         }}
                       >
-                        <span
-                          style={{ fontSize: "13px", margin: "0 20px 0 0" }}
-                        >
-                          ◯
-                        </span>
+                        <span style={{ margin: "0 20px 0 0" }}>◯</span>
                         Watch to earn
                       </h5>
                       <h5
+                        className={styles.fontSizeThreetyTwo}
                         style={{
                           display: "flex",
                           alignItems: "center",
                         }}
                       >
-                        <span
-                          style={{ fontSize: "13px", margin: "0 20px 0 0" }}
-                        >
-                          ◯
-                        </span>
+                        <span style={{ margin: "0 20px 0 0" }}>◯</span>
                         Play to earn
                       </h5>
                       <h5
+                        className={styles.fontSizeThreetyTwo}
                         style={{
                           display: "flex",
                           alignItems: "center",
                         }}
                       >
-                        <span
-                          style={{ fontSize: "13px", margin: "0 20px 0 0" }}
-                        >
-                          ◯
-                        </span>
+                        <span style={{ margin: "0 20px 0 0" }}>◯</span>
                         Create to earn
                       </h5>
                     </div>
@@ -330,7 +355,7 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
       <section className={styles.fandomSection}>
         <ContentWrapper>
           <div className={styles.column}>
-            <h2>Fandom</h2>
+            <h2 className={styles.fontSizeFourtyEight}>Fandom</h2>
             <div
               className={styles.row}
               style={{ justifyContent: "center", margin: "20px 0 0" }}
@@ -339,7 +364,7 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
                 <div className={styles.wrapperText}>
                   <span>◯</span>
                   <div>
-                    <h5>
+                    <h5 className={styles.fontSizeThreetyTwo}>
                       Ultimately closed connection with your artist in every
                       moment.
                     </h5>
@@ -348,7 +373,7 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
                 <div className={styles.wrapperText}>
                   <span>◯</span>
                   <div>
-                    <h5>
+                    <h5 className={styles.fontSizeThreetyTwo}>
                       Fun time with your favorite artist's activity and campaign
                     </h5>
                   </div>
@@ -383,12 +408,12 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
               <div className={styles.groupText}>
                 <div className={styles.wrapperText}>
                   <span>◯</span>
-                  <h5>Collect our unique NFT Gamification.</h5>
+                  <h5 className={styles.fontSizeThreetyTwo}>Collect our unique NFT Gamification.</h5>
                 </div>
                 <div className={styles.wrapperText}>
                   <span>◯</span>
                   <div>
-                    <h5>'watch to earn' and 'share to earn' features.</h5>
+                    <h5 className={styles.fontSizeThreetyTwo}>'watch to earn' and 'share to earn' features.</h5>
                   </div>
                 </div>
               </div>
@@ -425,7 +450,7 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
                 <div className={styles.wrapperText}>
                   <span>◯</span>
                   <div>
-                    <h5>
+                    <h5 className={styles.fontSizeThreetyTwo}>
                       Find and purchase rare items by your artist (single piece
                       of the world)
                     </h5>
@@ -459,7 +484,7 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
       <section className={styles.artistsSection}>
         <ContentWrapper>
           <div className={styles.colunm}>
-            <h2>Artists - Idol - Superstar</h2>
+            <h2 className={styles.fontSizeFourtyEight}>Artists - Idol - Superstar</h2>
 
             <div
               className={styles.row}
@@ -473,14 +498,14 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
                   showStatus={false}
                   showThumbs={false}
                 > */}
-                  <div className={styles.card}>
-                    <img
-                      src={"/images/artistsSection1.png"}
-                      alt={"/images/artistsSection1.png"}
-                      className={styles.fitImage}
-                    />
-                  </div>
-                  {/* <div className={styles.card}>
+                <div className={styles.card}>
+                  <img
+                    src={"/images/artistsSection1.png"}
+                    alt={"/images/artistsSection1.png"}
+                    className={styles.fitImage}
+                  />
+                </div>
+                {/* <div className={styles.card}>
                     <img
                       src={"/images/artistsSection2.png"}
                       alt={"/images/artistsSection2.png"}
@@ -492,21 +517,21 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
               <div className={styles.groupText}>
                 <div className={styles.wrapperText}>
                   <span>◯</span>
-                  <h5>
+                  <h5 className={styles.fontSizeThreetyTwo}>
                     Get closer to your fans and improve communication. Pay
                     attention to your lover's wishes.
                   </h5>
                 </div>
                 <div className={styles.wrapperText}>
                   <span>◯</span>
-                  <h5>
+                  <h5 className={styles.fontSizeThreetyTwo}>
                     Make use of the influence of your fan base. Know your fan's
                     rank and level; who is your true and supportive fan?
                   </h5>
                 </div>
                 <div className={styles.wrapperText}>
                   <span>◯</span>
-                  <h5>Creating a strong and long-lasting fan base.</h5>
+                  <h5 className={styles.fontSizeThreetyTwo}>Creating a strong and long-lasting fan base.</h5>
                 </div>
               </div>
             </div>
@@ -523,14 +548,14 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
                   showStatus={false}
                   showThumbs={false}
                 > */}
-                  <div className={styles.card}>
-                    <img
-                      src={"/images/artistsSection3.png"}
-                      alt={"/images/artistsSection3.png"}
-                      className={styles.fitImage}
-                    />
-                  </div>
-                  {/* <div className={styles.card}>
+                <div className={styles.card}>
+                  <img
+                    src={"/images/artistsSection3.png"}
+                    alt={"/images/artistsSection3.png"}
+                    className={styles.fitImage}
+                  />
+                </div>
+                {/* <div className={styles.card}>
                     <img
                       src={"/images/artistsSection4.png"}
                       alt={"/images/artistsSection4.png"}
@@ -542,14 +567,14 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
               <div className={styles.groupText}>
                 <div className={styles.wrapperText}>
                   <span>◯</span>
-                  <h5>
+                  <h5 className={styles.fontSizeThreetyTwo}>
                     Peronalize NFT to fit your lifestyle and preferences (not
                     like traditional NFT)
                   </h5>
                 </div>
                 <div className={styles.wrapperText}>
                   <span>◯</span>
-                  <h5>Usage-base billing models for a copyright license</h5>
+                  <h5 className={styles.fontSizeThreetyTwo}>Usage-base billing models for a copyright license</h5>
                 </div>
               </div>
             </div>
@@ -559,9 +584,9 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
       <section className={styles.decentralizedSection}>
         <ContentWrapper>
           <div className={styles.column}>
-            <h1>Decentralized and</h1>
-            <h2>secured platform</h2>
-            <h5 style={{ textAlign: "center" }}>
+            <h1 className={styles.fontSizeFourtyEight}>Decentralized and</h1>
+            <h2 className={styles.fontSizeFourtyEight}>secured platform</h2>
+            <h5 className={styles.fontSizeThreetyTwo} style={{ textAlign: "center" }}>
               <strong>
                 Decentralized Peer-to-Peer entertainment and gamification
                 platform{" "}
@@ -613,7 +638,7 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
       <section className={styles.teamSection}>
         <ContentWrapper>
           <div className={styles.column}>
-            <h2>Team</h2>
+            <h2 className={styles.fontSizeFourtyEight}>Team</h2>
           </div>
           <TeamSection />
         </ContentWrapper>

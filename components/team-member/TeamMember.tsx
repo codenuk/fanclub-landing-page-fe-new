@@ -1,6 +1,5 @@
 import { Typography } from "@mui/material";
 import Image from "next/image";
-
 import React from "react";
 import {
   ImgZone,
@@ -39,26 +38,35 @@ const TeamMember: React.FC<TeamMemberProps> = ({
         <h5
           style={{ textAlign: "center", color: "white", margin: "6px auto 0" }}
         >
-          {name}<span style={{ fontSize: "16px" }}>{special}</span>
+          {name}
+          <span style={{ fontSize: "16px" }}>{special}</span>
         </h5>
         <p
-            style={{
-              textAlign: "center", color: "white", margin: "0 auto 0",
-              fontSize: "16px",
-            }}
-          >
-            {" "}
-            {shortName}
-          </p>
-        {position.split("\n").map((str, index) => (
+          style={{
+            textAlign: "center",
+            color: "white",
+            margin: "0 auto 0",
+          }}
+        >
+          {" "}
+          {shortName}
+        </p>
+        <TextAll
+          variant="body2"
+          sx={{ textAlign: "center", color: "white", margin: "0 auto" }}
+        >
+          {position}
+        </TextAll>
+        {/* {position.split("\n").map((str, index) => (
           <TextAll
+          className={styles.fontSizeThreetyTwo}
             key={index}
             variant="body2"
-            sx={{ textAlign: "center", color: "white", margin: '0 auto' }}
+            sx={{ textAlign: "center", color: "white", margin: "0 auto" }}
           >
             {str}
           </TextAll>
-        ))}
+        ))} */}
       </TextZone>
     </TeamMemberWrapper>
   );
