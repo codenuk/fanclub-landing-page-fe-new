@@ -64,7 +64,7 @@ only 29,000 pcs.
                       0
                     )
                   )}{" "}
-                  กาชา
+                  Mystery Box
                 </p>
                 {modalMsgErrBuyGashapon && <span style={{ color: 'red' }}>{modalMsgErrBuyGashapon}</span>}
                 <LoadingButton
@@ -91,7 +91,7 @@ only 29,000 pcs.
             </div>
             <h6 className={styles.textL}>ระดับความหายาก</h6>
             <div className={styles.textL2}>
-              <p>กาชาปอง</p> <p>จำนวน</p> <p>โอกาสที่จะได้</p>
+              <p>Mystery Box</p> <p>จำนวน</p> <p>โอกาสที่จะได้</p>
             </div>
             <div className={styles.displayGrid}>
               {[

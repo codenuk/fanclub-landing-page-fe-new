@@ -41,7 +41,7 @@ const GachaponOpenCardPage: React.FC<GachaponOpenCardProps> = ({
                   alt="/images/vector.svg"
                 />
                 <h6 className={styles.colortext}>ดำเนินการซื้อสำเร็จ</h6>
-                <p>กาชาปองเป็นของคุณแล้ว</p>
+                <p>Mystery Box เป็นของคุณแล้ว</p>
                 <h5 className={styles.colortext2}>
                   ระดับความหายาก คือ {modalCard.rate * 100}%
                 </h5>
