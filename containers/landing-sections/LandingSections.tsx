@@ -29,7 +29,7 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
               </div>
               <h4 className={styles.fontSizeFourtyEight}>GET CLOSER TO YOUR</h4>
               <h4 className={styles.fontSizeFourtyEight}>FAVOURITE ARTISTS</h4>
-              <h1>FREE 100 STARS</h1>
+              <h1>FREE 100 COIN</h1>
               {!isAuth && isInit && (
                 <button
                   className={`${styles.customButton} ${styles.fontSizeFourtyEight}`}

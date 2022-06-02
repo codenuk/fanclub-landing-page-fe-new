@@ -47,7 +47,7 @@ const WalletItem: React.FC<WalletItemProps> = ({ balance, walletAddress }) => {
             {formattedBalance.split(".")[0]}
           </Typography>
           <Typography variant="body1" sx={{ paddingBottom: 0.5 }}>
-            .{formattedBalance.split(".")[1]} Stars
+            .{formattedBalance.split(".")[1]} Coin
           </Typography>
         </WalletBalanceWrapper>
         <AddressSectionWrapper>

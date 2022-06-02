@@ -78,7 +78,7 @@ const PageLayout: React.FC<PageLayoutProps> = ({ children }: any) => {
           content="Get closer to your favourite artists"
         />
         <meta name="twitter:card" content="summary" />
-        <meta property="og:description" content="Register now. Free 100 Stars" />
+        <meta property="og:description" content="Register now. Free 100 Coin" />
         <meta
           property="og:image"
           content={"https://www.fandom.co.th/images/ogImageNew.png"}

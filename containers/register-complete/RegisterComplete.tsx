@@ -49,7 +49,7 @@ const RegisterComplete: React.FC<RegisterCompleteProps> = ({
         )}
         {tokenBalance && (
           <Typography sx={{ color: "#00E4E1" }} variant="h5">
-            Get {formatNumber(tokenBalance)} Stars
+            Get {formatNumber(tokenBalance)} Coin
           </Typography>
         )}
         <CompleteImageWrapper>

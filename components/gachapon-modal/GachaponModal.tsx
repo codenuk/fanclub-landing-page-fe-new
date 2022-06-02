@@ -78,14 +78,14 @@ only 29,000 pcs.
                   <p>Random</p>
                   <div className={styles.textF}>
                     <p>{gashaponCollectionInfo?.price}</p>{" "}
-                    <p className={styles.textP}>Stars</p>
+                    <p className={styles.textP}>Coin</p>
                   </div>
                 </LoadingButton>
 
                 <p className={styles.detillStotkP}>
-                  {/* จำนวน Stars{" "} */}
+                  {/* จำนวน Coin{" "} */}
                   Balance{" "}
-                  {numberFormmater(tokenBalance)} Stars
+                  {numberFormmater(tokenBalance)} Coin
                 </p>
               </div>
             </div>
