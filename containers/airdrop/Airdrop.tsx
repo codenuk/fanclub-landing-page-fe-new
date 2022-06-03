@@ -124,7 +124,7 @@ const Airdrop: React.FC<AirdropProps> = () => {
             setShowErrorStatus("");
           }}
           title={
-            showErrorStatus ? "ไม่สามารถรับ Coin" : `ได้รับ Coin เรียบร้อยแล้ว`
+            showErrorStatus ? "ไม่สามารถรับ Coins" : `ได้รับ Coins เรียบร้อยแล้ว`
           }
           mode={showErrorStatus ? "error" : "success"}
           description={
@@ -132,7 +132,7 @@ const Airdrop: React.FC<AirdropProps> = () => {
               ? ""
               : `ได้รับ ${formatNumber(
                   earnedData?.promoCode?.couponValue
-                )} Coin เรียบร้อยแล้ว`
+                )} Coins เรียบร้อยแล้ว`
           }
         />
         <LoadingModal open={earning} />

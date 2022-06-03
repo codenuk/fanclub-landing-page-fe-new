@@ -73,12 +73,12 @@ const PageLayout: React.FC<PageLayoutProps> = ({ children }: any) => {
         <meta property="og:url" content="your url" />
         <meta property="og:type" content="website" />
         <meta property="fb:app_id" content="your fb app id" />
-        <meta
-          property="og:title"
-          content="Get closer to your favourite artists"
-        />
+        <meta property="og:title" content="ลงทะเบียนวันนี้ รับฟรี 100 เหรียญ" />
         <meta name="twitter:card" content="summary" />
-        <meta property="og:description" content="Register now. Free 100 Coin" />
+        <meta
+          property="og:description"
+          content="ชวนเพื่อนได้เพิ่มอีก 25 เหรียญ แล้วมาสนุกด้วยกันนะ"
+        />
         <meta
           property="og:image"
           content={"https://www.fandom.co.th/images/ogImageNew.png"}

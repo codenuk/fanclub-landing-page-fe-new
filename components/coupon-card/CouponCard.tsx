@@ -39,7 +39,7 @@ const CouponCard: React.FC<Props> = ({ code }): JSX.Element => {
     <CouponCardWrapper>
       <CouponContainer>
         <Typography variant="h5" fontWeight="bold" color="white">
-          เชิญเพื่อน ได้ 25 Coin
+          เชิญเพื่อน ได้ 25 Coins
         </Typography>
         <Typography variant="body1" color="white">
           Invite Link
