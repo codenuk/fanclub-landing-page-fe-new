@@ -6,6 +6,7 @@ import {
   ProfileImageWrapper,
   StarBox,
   StarButton,
+  ExpireDate
 } from "./accountMenu.styles";
 
 import { useAuth, useUserInfo } from "../../hooks";
@@ -51,6 +52,7 @@ const AccountMenu: React.FC<AccountMenuProps> = () => {
   return (
     <>
       <AccountMenuWrapper>
+        <div style={{position: 'relative'}}>
         <StarButton>
           <StarBox>
             <Image
@@ -67,6 +69,8 @@ const AccountMenu: React.FC<AccountMenuProps> = () => {
               : "0.00"}
           </Typography>
         </StarButton>
+        <ExpireDate>ใช้ได้ถึง 6/6/2566</ExpireDate>
+        </div>
         <ProfileImageWrapper onClick={handleClick}>
           <ProfileImage src="/images/profile-image.svg"/>
         </ProfileImageWrapper>

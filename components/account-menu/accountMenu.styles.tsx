@@ -30,6 +30,19 @@ export const StarButton = styled("div")`
   }
 `;
 
+export const ExpireDate = styled("p") `
+  color: white;
+  font-size: 12px;
+  width: fit-content;
+  position: absolute; 
+  right: 20%; 
+  bottom: -50%;
+
+  ${({ theme }) => theme.breakpoints.down("md")} {
+    display: none;
+  }
+`
+
 export const StarBox = styled("div")`
   width: 44px;
   height: 44px;

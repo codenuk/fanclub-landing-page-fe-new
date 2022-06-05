@@ -50,7 +50,7 @@ import { ICombineReducers } from "../../redux/reducers";
 type NavBarProps = {};
 
 const NavBar: React.FC<NavBarProps> = () => {
-  useUserInfo()
+  useUserInfo();
   const userInfoRedux = useSelector(
     (state: ICombineReducers) => state.userInfoReducer.userInfo
   );
@@ -159,10 +159,13 @@ const NavBar: React.FC<NavBarProps> = () => {
                       </StarBox>
                       <Typography variant="body1">
                         {userInfoRedux?.walletBalance?.tokenBalance
-                          ? formatNumber(userInfoRedux?.walletBalance?.tokenBalance)
+                          ? formatNumber(
+                              userInfoRedux?.walletBalance?.tokenBalance
+                            )
                           : "0.00"}
                       </Typography>
                     </StarButton>
+                    <p style={{ color: 'white', fontSize: '12px', marginTop: '10px' }}>ใช้ได้ถึง 6/6/2566</p>
                   </Box>
                 )}
 

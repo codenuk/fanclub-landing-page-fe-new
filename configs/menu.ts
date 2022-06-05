@@ -12,6 +12,10 @@ export const navMenuConfigs = (translate: TranslateFunction): MenuConfig[] => [
     title: translate("HOME"),
   },
   {
+    path: "https://www.news.fandom.co.th/",
+    title: translate("BLOG"),
+  },
+  {
     path: "/about-us",
     title: translate("ABOUT_US"),
   },
