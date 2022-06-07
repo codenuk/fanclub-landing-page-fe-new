@@ -8,6 +8,7 @@ export const PrivacyPolicyContainer = styled("div")`
   align-items: center;
   flex: 1;
   align-self: stretch;
+  position: relative;
 `;
 
 export const PrivacyPolicyWrapper = styled("section")`
@@ -23,7 +24,7 @@ export const PrivacyPolicyWrapper = styled("section")`
   justify-content: flex-start;
 
   gap: ${({ theme }) => theme.spacing(3)};
-  padding: ${({ theme }) => theme.spacing(10, 0)};
+  padding: ${({ theme }) => theme.spacing(5, 0)};
 `;
 
 export const Description = styled(Typography)`

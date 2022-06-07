@@ -5,27 +5,36 @@ import {
   IconButton,
   InputAdornment,
   TextField,
+  Checkbox,
   Typography,
+  Modal,
 } from "@mui/material";
 import React, { useCallback, useEffect, useState } from "react";
-import { SignUpFormWrapper } from "./signUpForm.styles";
+import {
+  SignUpFormWrapper,
+  GroupCheckBox,
+  OpenPopUP,
+} from "./signUpForm.styles";
 
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import { useFormik } from "formik";
 import { SignUpFormSchema } from "../../form-validators";
 import { useFormikUtils } from "../../hooks";
 import { PasswordRequirement } from "../password-requirement";
+import { PrivacyPolicy } from "../../containers";
 
 export interface SignUpFormData {
   email: string;
   password: string;
   refCode: string;
+  allowPrivacy: boolean;
 }
 
 const initialFormValues = {
   email: "",
   password: "",
   refCode: "",
+  allowPrivacy: false,
 };
 
 type SignUpProps = {
@@ -55,6 +64,7 @@ const SignUpForm: React.FC<SignUpProps> = ({
     handleChange,
   });
   const [isShowPassword, setIsShowPassword] = useState(false);
+  const [isShowModal, setIsShowModal] = useState(false);
 
   const handleToggleShowPassword = useCallback(() => {
     setIsShowPassword((prev) => !prev);
@@ -118,6 +128,35 @@ const SignUpForm: React.FC<SignUpProps> = ({
           variant="filled"
           {...textFieldProps("refCode")}
         />
+        <GroupCheckBox>
+          <Checkbox
+            {...textFieldProps("allowPrivacy")}
+            sx={
+              errors.allowPrivacy
+                ? {
+                    color: "#d32f2f",
+                  }
+                : {}
+            }
+          />
+          I agree to the{" "}
+          <OpenPopUP onClick={() => setIsShowModal(true)}>
+            Privacy Policy
+          </OpenPopUP>
+          <Modal
+            open={isShowModal}
+            onClose={() => setIsShowModal(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+          >
+            <Box sx={style}>
+              <PrivacyPolicy
+                isSignUp={true}
+                onClose={() => setIsShowModal(false)}
+              />
+            </Box>
+          </Modal>
+        </GroupCheckBox>
 
         <Button
           color="primary"
@@ -127,7 +166,7 @@ const SignUpForm: React.FC<SignUpProps> = ({
               xs: "100%",
               lg: "120px",
             },
-            marginTop: 4,
+            marginTop: 2,
           }}
           size="large"
         >
@@ -143,3 +182,18 @@ SignUpForm.defaultProps = {
 };
 
 export default SignUpForm;
+
+const style = {
+  position: "absolute" as "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  maxWidth: 900,
+  width: "90%",
+  height: "80%",
+  bgcolor: "background.paper",
+  boxShadow: 24,
+  p: 2,
+  outline: "none",
+  overflow: "auto",
+};

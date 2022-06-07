@@ -13,3 +13,22 @@ export const SignUpFormWrapper = styled("form")`
     gap: ${({ theme }) => theme.spacing(1)};
   }
 `;
+
+export const GroupCheckBox = styled("div")`
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const OpenPopUP = styled("span")`
+  cursor: pointer;
+  color: #317fbd;
+  line-height: 1;
+
+  &:hover {
+    border-bottom: 1px solid #317fbd;
+  }
+`;
+
