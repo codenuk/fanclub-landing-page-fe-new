@@ -31,6 +31,7 @@ const SignUpInformation: React.FC<SignUpProps> = ({
         const result = await sendOTP({
           email: signUpState.email,
           promoCodeReferral: signUpState?.refCode,
+          tokenCaptcha: value.tokenCaptcha,
         });
         if (result.res_code === "00") {
           onSubmit({
@@ -52,6 +53,7 @@ const SignUpInformation: React.FC<SignUpProps> = ({
           defaultValues={{
             firstName: signUpState?.firstName,
             lastName: signUpState?.lastName,
+            defaultValues: "",
           }}
           email={signUpState?.email}
           onBack={onBack}

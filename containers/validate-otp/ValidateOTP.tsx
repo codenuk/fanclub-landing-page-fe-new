@@ -61,7 +61,7 @@ const ValidateOTP: React.FC<ValidateOTPProps> = ({
         >
           Confirm
         </Button>
-        {resending ? (
+        {onResendOTP ? resending ? (
           <CircularProgress size={24} />
         ) : (
           <Button
@@ -71,7 +71,7 @@ const ValidateOTP: React.FC<ValidateOTPProps> = ({
           >
             Resend OTP to email
           </Button>
-        )}
+        ) : <></>}
         <Button
           sx={{
             width: {

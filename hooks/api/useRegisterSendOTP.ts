@@ -10,8 +10,8 @@ function useRegisterSendOTP(onSuccess?: (result: any) => void) {
     isLoading: loading,
     error,
     data,
-  } = useMutation(({ email, promoCodeReferral }: RegisterSendOTPParams) =>
-    registerSendOTP({ email, promoCodeReferral })
+  } = useMutation(({ email, promoCodeReferral, tokenCaptcha }: RegisterSendOTPParams) =>
+    registerSendOTP({ email, promoCodeReferral, tokenCaptcha })
   );
   return {
     sendOTP,

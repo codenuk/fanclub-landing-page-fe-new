@@ -6,7 +6,6 @@ import {
   InputAdornment,
   TextField,
   Checkbox,
-  Typography,
   Modal,
 } from "@mui/material";
 import React, { useCallback, useEffect, useState } from "react";
@@ -22,7 +21,6 @@ import { SignUpFormSchema } from "../../form-validators";
 import { useFormikUtils } from "../../hooks";
 import { PasswordRequirement } from "../password-requirement";
 import { PrivacyPolicy } from "../../containers";
-import ReCAPTCHA from "react-google-recaptcha-enterprise";
 
 export interface SignUpFormData {
   email: string;
@@ -158,8 +156,6 @@ const SignUpForm: React.FC<SignUpProps> = ({
             </Box>
           </Modal>
         </GroupCheckBox>
-
-        <ReCAPTCHA sitekey="6LfEAlIgAAAAAIS5bWda26miX0sL9TuBBDk_S-8i" onChange={(e) => console.log(e)} />
 
         <Button
           color="primary"

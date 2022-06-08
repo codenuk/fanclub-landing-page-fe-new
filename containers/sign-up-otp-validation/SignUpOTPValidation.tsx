@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from "react";
 import { ValidateOTP } from "..";
 import { useRegisterVerifyOTP } from "../../hooks";
-import { registerSendOTP } from "../../services";
+// import { registerSendOTP } from "../../services";
 
 type SignUpOTPValidationProps = {
   signUpState: any;
@@ -14,7 +14,7 @@ const SignUpOTPValidation: React.FC<SignUpOTPValidationProps> = ({
   onSubmit,
   onBack,
 }) => {
-  const [isResendingOTP, setIsResendingOTP] = useState(false);
+  // const [isResendingOTP, setIsResendingOTP] = useState(false);
   const { verifyOTP, loading, data } = useRegisterVerifyOTP((result) => {
     if (result?.res_code === "00") {
       onSubmit?.({
@@ -24,18 +24,18 @@ const SignUpOTPValidation: React.FC<SignUpOTPValidationProps> = ({
     }
   });
 
-  const handleResendOTP = useCallback(async () => {
-    try {
-      setIsResendingOTP(true);
-      await registerSendOTP({
-        email: signUpState.email,
-        promoCodeReferral: signUpState?.refCode,
-      });
-      setIsResendingOTP(false);
-    } catch (error) {
-      setIsResendingOTP(false);
-    }
-  }, [signUpState.email, signUpState?.refCode]);
+  // const handleResendOTP = useCallback(async () => {
+  //   try {
+  //     setIsResendingOTP(true);
+  //     await registerSendOTP({
+  //       email: signUpState.email,
+  //       promoCodeReferral: signUpState?.refCode,
+  //     });
+  //     setIsResendingOTP(false);
+  //   } catch (error) {
+  //     setIsResendingOTP(false);
+  //   }
+  // }, [signUpState.email, signUpState?.refCode]);
 
   const handleSubmitOTP = useCallback(
     async (otp: string) => {
@@ -59,10 +59,10 @@ const SignUpOTPValidation: React.FC<SignUpOTPValidationProps> = ({
     <ValidateOTP
       errorMessage={errorMessage}
       loading={loading}
-      resending={isResendingOTP}
+      // resending={isResendingOTP}
       onSubmit={handleSubmitOTP}
       onBack={onBack}
-      onResendOTP={handleResendOTP}
+      // onResendOTP={handleResendOTP}
     />
   );
 };

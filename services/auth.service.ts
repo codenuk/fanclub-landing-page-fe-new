@@ -3,16 +3,19 @@ import { axiosInstance } from "../configs/axios";
 export interface RegisterSendOTPParams {
   email: string;
   promoCodeReferral?: string;
+  tokenCaptcha: string;
 }
 
 export function registerSendOTP({
   email,
   promoCodeReferral,
+  tokenCaptcha,
 }: RegisterSendOTPParams): Promise<any> {
   const _email = email.toLowerCase();
   return axiosInstance.post("/auth/register/send_otp", {
     email: _email,
     promoCodeReferral,
+    tokenCaptcha,
   });
 }
 
@@ -38,8 +41,8 @@ export interface ForgotPasswordSendOTPParams {
 
 export function forgotPasswordSendOTP({
   email,
-  // phoneNumber,
-}: ForgotPasswordSendOTPParams): Promise<any> {
+}: // phoneNumber,
+ForgotPasswordSendOTPParams): Promise<any> {
   const _email = email.toLowerCase();
   return axiosInstance.post("/auth/forgot_password/send_otp", {
     email: _email,

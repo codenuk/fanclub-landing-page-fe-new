@@ -40,6 +40,7 @@ export const SignUpFormInformationSchema = () =>
   yup.object().shape({
     firstName: yup.string().required("First name is a required field"),
     lastName: yup.string().required("Last name is a required field"),
+    tokenCaptcha: yup.string().required(),
   });
 
 export const LogInFormSchema = () =>
