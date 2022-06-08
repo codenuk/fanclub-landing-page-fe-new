@@ -53,7 +53,7 @@ const SignUpInformation: React.FC<SignUpProps> = ({
           defaultValues={{
             firstName: signUpState?.firstName,
             lastName: signUpState?.lastName,
-            defaultValues: "",
+            tokenCaptcha: "",
           }}
           email={signUpState?.email}
           onBack={onBack}
