@@ -80,7 +80,7 @@ const mockTeamMembers = [
       photoUrl: "/images/team-9.png",
       name: "คุณศิริพร พัชรวัฒน์",
       shortName: "",
-      position: `(ที่ปรึกษาด้านด้าน Digital Transformation and Developing (software) Startup Ecosystem)   
+      position: `(ที่ปรึกษาด้าน Digital Transformation and Developing (software) Startup Ecosystem)   
       อดีตผู้บริหาร บริษัท ไมโครซอฟต์           
       `,
     },

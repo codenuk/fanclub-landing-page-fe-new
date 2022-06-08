@@ -6,7 +6,6 @@ import {
   InputAdornment,
   TextField,
   Checkbox,
-  Typography,
   Modal,
 } from "@mui/material";
 import React, { useCallback, useEffect, useState } from "react";

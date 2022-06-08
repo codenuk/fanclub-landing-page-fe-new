@@ -18,18 +18,22 @@ import { SignUpFormInformationSchema } from "../../form-validators";
 import { useFormikUtils } from "../../hooks";
 import { Box } from "@mui/system";
 
+import ReCAPTCHA from "react-google-recaptcha";
+
 export interface SignUpInformationFormData {
   firstName: string;
   lastName: string;
+  tokenCaptcha: string;
 }
 
 const initialFormValues = {
   firstName: "",
   lastName: "",
+  tokenCaptcha: "",
 };
 
 type SignUpProps = {
-  email?: string
+  email?: string;
   defaultValues?: any;
   loading?: boolean;
   onSubmit?: (value: SignUpInformationFormData) => void;
@@ -43,7 +47,7 @@ const SignUpInformationForm: React.FC<SignUpProps> = ({
   onSubmit,
   onBack,
 }) => {
-  const { handleSubmit, values, errors, handleChange } = useFormik({
+  const { handleSubmit, values, errors, setFieldValue, handleChange } = useFormik({
     initialValues: defaultValues ?? initialFormValues,
     validationSchema: SignUpFormInformationSchema(),
     onSubmit: (value: SignUpInformationFormData) => {
@@ -56,7 +60,7 @@ const SignUpInformationForm: React.FC<SignUpProps> = ({
     values,
     handleChange,
   });
-  
+
   return (
     <>
       <SignUpInformationWrapper onSubmit={handleSubmit}>
@@ -92,6 +96,13 @@ const SignUpInformationForm: React.FC<SignUpProps> = ({
             {...textFieldProps("lastName")}
           />
         </NameFieldsWrapper>
+          <ReCAPTCHA
+            type="image"
+            sitekey={process.env["NEXT_PUBLIC_SITE_KEY"] as string}
+            onChange={(token: any) =>
+              setFieldValue("tokenCaptcha", token, true)
+            }
+          />
         <Box
           sx={{
             display: "flex",
