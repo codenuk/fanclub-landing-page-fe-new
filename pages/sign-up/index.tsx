@@ -34,12 +34,13 @@ const SignUpPage: NextPageWithLayout = () => {
     <ContentWrapper>
       <div
         style={{
-          height: "70vh",
+          minHeight: "70vh",
+          height: 'auto',
           display: "flex",
           flexDirection: "column",
           // justifyContent: "center",
           alignContent: "center",
-          paddingTop: "50px",
+          padding: "50px 0",
         }}
       >
         <img
