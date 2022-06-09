@@ -14,3 +14,4 @@ export { default as useChangePassword } from "./useChangePassword";
 export { default as useGashaponByUser } from "./useGashaponByUser";
 export { default as useGashaponCollectionInfo } from "./useGashaponCollectionInfo";
 export { default as useBuyGashapon } from "./useBuyGashapon";
+export { default as useDashboard } from "./useDashboard";
