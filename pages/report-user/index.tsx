@@ -96,6 +96,14 @@ const ReportUserPage: NextPageWithLayout = () => {
         minWidth: 200,
       },
       {
+        field: "promoCode",
+        align: "center",
+        headerAlign: "center",
+        headerName: "ref_code",
+        flex: 1,
+        minWidth: 200,
+      },
+      {
         field: "balanceCoin",
         align: "center",
         headerAlign: "center",
@@ -112,6 +120,14 @@ const ReportUserPage: NextPageWithLayout = () => {
         minWidth: 200,
       },
       {
+        field: "registerByPromoCode",
+        align: "center",
+        headerAlign: "center",
+        headerName: "Register with ref_code",
+        flex: 1,
+        minWidth: 200,
+      },
+      {
         field: "createdAt",
         align: "center",
         headerAlign: "center",
@@ -122,7 +138,7 @@ const ReportUserPage: NextPageWithLayout = () => {
     ],
     []
   );
-
+  
   const list = useMemo(() => {
     if (userList) {
       return userList.map((data: any, index: number) => {
@@ -134,6 +150,8 @@ const ReportUserPage: NextPageWithLayout = () => {
           balanceCoin: formatNumber(data.walletBalance.tokenBalance),
           buyMysteryBox: formatNumber(data.walletBalance.tokenBuyGashapon),
           createdAt: data.createdAt,
+          promoCode: data.promoCode,
+          registerByPromoCode: data.registerByPromoCode
         };
       });
     } else {
@@ -221,7 +239,6 @@ const ReportUserPage: NextPageWithLayout = () => {
           rows={list}
           components={{
             Row: (props) => {
-              console.log('props', props)
               return (
                 <>
                   <GridRow {...props} />

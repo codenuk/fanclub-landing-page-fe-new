@@ -5,7 +5,9 @@ function useDashboard(
   collectionID: string,
   airdropCampaignID: string,
   registerToEarnCampaignID: string,
-  referralEarnOnlyInviterCampaignID: string
+  referralEarnOnlyInviterCampaignID: string,
+  startDate: string,
+  endDate: string
 ) {
   const { data, loading, error, refetch } = useQuery(GET_DASHBOARD, {
     fetchPolicy: "no-cache",
@@ -14,6 +16,8 @@ function useDashboard(
       airdropCampaignID: airdropCampaignID,
       registerToEarnCampaignID: registerToEarnCampaignID,
       referralEarnOnlyInviterCampaignID: referralEarnOnlyInviterCampaignID,
+      startDate: startDate,
+      endDate: endDate,
     },
   });
 

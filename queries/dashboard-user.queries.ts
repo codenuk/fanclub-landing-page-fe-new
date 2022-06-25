@@ -11,7 +11,8 @@ query DashboardUser($name: String, $surname: String, $email: String, $startDate:
         surname
         email
         createdAt
-
+        promoCode
+        registerByPromoCode
         walletBalance {
             walletAddress
             tokenBalance

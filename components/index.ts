@@ -25,3 +25,4 @@ export * from "./token-supply-info";
 export * from "./coupon-card";
 export * from "./gachapon-modal";
 export * from "./gachapon-open-card";
+export * from "./chart-dashboard";

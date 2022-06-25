@@ -1,0 +1,111 @@
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.flex50 {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+}
+
+.smallBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 5px rgba(134, 45, 234, 0.08), 0px 8px 24px rgba(134, 45, 234, 0.08);
+    border-radius: 20px;
+    padding: 20px;
+
+    h3 {
+        margin-top: 40px;
+        color: #8E25F7;
+    }
+
+    h5 {
+        margin: 20px 0;
+    }
+
+    h3, h5 {
+        text-align: center;
+    }
+}
+
+.largeBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 5px rgba(134, 45, 234, 0.08), 0px 8px 24px rgba(134, 45, 234, 0.08);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.groupProgressBar {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    
+    .greyProgress {
+        width: 100%;
+        height: 150px;
+        background-color: #F8F8F9;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 0 0 10px 0;
+
+        p {
+            z-index: 1;
+        }
+    }
+
+    .greenProgress {
+        background-color: #F63AB2;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        border-radius: 10px;
+    }
+
+    .rate {
+       font-size: 16px; 
+       text-align: center;
+    }
+    .amount {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+.groupProgressBarCampaign {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #FFFFFF;
+    padding: 5px;
+    border-radius: 10px;
+
+    .greyProgress {
+        width: 100%;
+        height: 13px;
+        background-color: #F8F8F9;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .greenProgress {
+        background-color: #8E25F7;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        border-radius: 10px;
+    }
+
+    .flexEnd {
+        text-align: end;
+    }
+}
