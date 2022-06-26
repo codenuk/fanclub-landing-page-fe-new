@@ -50,11 +50,11 @@ function useDashboardUser(
     });
   }, [fetch, nextToken, name, surname, email, startDate, endDate]);
 
-  useEffect(() => {
-    if (startDate && endDate) {
-      fetch();
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (startDate && endDate) {
+  //     fetch();
+  //   }
+  // }, []);
 
   useEffect(() => {
     setNextToken(data?.dashboardUser?.nextToken);

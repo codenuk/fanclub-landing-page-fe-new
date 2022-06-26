@@ -2,18 +2,19 @@ import React, { useEffect, useMemo, useState } from "react";
 import { ContentWrapper, LoadingModal, ChartDashboard } from "../../components";
 import { PageLayout } from "../../layouts";
 import { NextPageWithLayout } from "../_app";
-import { useDashboard, useAuth } from "../../hooks";
+import { useDashboard, useAuth, useDashboardCoinOnhand } from "../../hooks";
 import { useRouter } from "next/router";
 import styles from "./index.module.scss";
 import { formatDateWithoutTime } from "../../utils/date-utils";
 import dayjs from "dayjs";
+import { CircularProgress } from "@mui/material";
 
 const DashboardPage: NextPageWithLayout = () => {
   const router = useRouter();
   const { isAuth, isInit } = useAuth();
   const [period, setPeriod] = useState({
-    startDate: dayjs().subtract(7, "day").toISOString(),
-    endDate: dayjs().toISOString(),
+    startDate: dayjs().subtract(7, "day").toISOString().split('T')[0],
+    endDate: dayjs().toISOString().split('T')[0],
   });
 
   const {
@@ -28,6 +29,8 @@ const DashboardPage: NextPageWithLayout = () => {
     period.startDate,
     period.endDate
   );
+
+  const { coinOnhand, loading: loadingCoin } = useDashboardCoinOnhand();
 
   useEffect(() => {
     if (
@@ -91,7 +94,10 @@ const DashboardPage: NextPageWithLayout = () => {
           </div>
           <div className={styles.smallBox}>
             <h6>Coins ทั้งหมด</h6>
-            <h3>{numberFormmater(gashaponCollectionInfo?.coinOnhand)}</h3>
+            <h3>
+              {numberFormmater(coinOnhand)}{" "}
+              {loadingCoin && <CircularProgress />}
+            </h3>
             <h5>Coins</h5>
           </div>
         </div>
@@ -127,13 +133,11 @@ const DashboardPage: NextPageWithLayout = () => {
               ].map((data, index) => (
                 <div className={styles.groupProgressBar} key={index}>
                   <div className={styles.greyProgress}>
-                    <p>{((data.max - data.amount) * 100) / data.max}%</p>
+                    <p>{(data.amount * 100) / data.max}%</p>
                     <div
                       className={styles.greenProgress}
                       style={{
-                        height: `${
-                          ((data.max - data.amount) * 100) / data.max
-                        }%`,
+                        height: `${(data.amount * 100) / data.max}%`,
                       }}
                     ></div>
                   </div>
@@ -203,39 +207,9 @@ const DashboardPage: NextPageWithLayout = () => {
             <div className={styles.row}>
               <h6>Campaign</h6>
 
-              <button
-                onClick={() =>
-                  setPeriod({
-                    startDate: dayjs().subtract(7, "day").toISOString(),
-                    endDate: dayjs().toISOString(),
-                  })
-                }
-                type="button"
-              >
-                weekly
-              </button>
-              <button
-                onClick={() =>
-                  setPeriod({
-                    startDate: dayjs().subtract(1, "month").toISOString(),
-                    endDate: dayjs().toISOString(),
-                  })
-                }
-                type="button"
-              >
-                monthly
-              </button>
-              <button
-                onClick={() =>
-                  setPeriod({
-                    startDate: dayjs().subtract(1, "year").toISOString(),
-                    endDate: dayjs().toISOString(),
-                  })
-                }
-                type="button"
-              >
-                yearly
-              </button>
+              <input type={"date"} onChange={(e) => setPeriod({...period, startDate: e.target.value})} value={period.startDate} />
+              <input type={"date"} onChange={(e) => setPeriod({...period, endDate: e.target.value})} value={period.endDate} />
+              
             </div>
             <ChartDashboard
               labels={ScoreData.labels}

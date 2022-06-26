@@ -16,6 +16,7 @@ import { ContentWrapper, LoadingModal } from "../../components";
 import { TransactionTableWrapper } from "../../containers/transaction-table/transactionTable.styles";
 
 import { formatNumber } from "../../utils/number-utils";
+import { CSVLink, CSVDownload } from "react-csv";
 
 const ReportUserPage: NextPageWithLayout = () => {
   const router = useRouter();
@@ -138,7 +139,7 @@ const ReportUserPage: NextPageWithLayout = () => {
     ],
     []
   );
-  
+
   const list = useMemo(() => {
     if (userList) {
       return userList.map((data: any, index: number) => {
@@ -151,7 +152,7 @@ const ReportUserPage: NextPageWithLayout = () => {
           buyMysteryBox: formatNumber(data.walletBalance.tokenBuyGashapon),
           createdAt: data.createdAt,
           promoCode: data.promoCode,
-          registerByPromoCode: data.registerByPromoCode
+          registerByPromoCode: data.registerByPromoCode,
         };
       });
     } else {
@@ -190,6 +191,21 @@ const ReportUserPage: NextPageWithLayout = () => {
     []
   );
 
+  const [loadAll, setLoadAll] = useState(false);
+  const [showBtnDownload, setShowBtnDownload] = useState(false);
+  useEffect(() => {
+    if (loadAll) {
+      if (nextToken) {
+        loadMore();
+        setShowBtnDownload(true);
+      }
+    }
+  }, [loadAll, nextToken]);
+
+  useEffect(() => {
+    loadFilter()
+  }, [])
+
   return (
     <ContentWrapper sx={{ minHeight: "750px", paddingBottom: 1 }}>
       <LoadingModal open={loading} />
@@ -223,6 +239,17 @@ const ReportUserPage: NextPageWithLayout = () => {
         >
           Search
         </Button>
+
+        {!showBtnDownload ? (
+            <button type="button" onClick={() => setLoadAll(true)}>
+              Prepare download data
+            </button>
+          ) : (
+            <CSVLink data={list} filename={"report-user.csv"}>
+              {"Download me"}
+            </CSVLink>
+          )}
+          
         <DataGrid
           sx={{
             marginTop: 2,

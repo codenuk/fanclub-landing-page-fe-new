@@ -20,7 +20,6 @@ query DashboardOverview(
     res_code
     res_desc
     userCount
-    coinOnhand
     dayListTransaction {
         amountRedeem
         amountEarn

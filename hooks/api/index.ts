@@ -16,3 +16,4 @@ export { default as useGashaponCollectionInfo } from "./useGashaponCollectionInf
 export { default as useBuyGashapon } from "./useBuyGashapon";
 export { default as useDashboard } from "./useDashboard";
 export { default as useDashboardUser } from "./useDashboardUser";
+export { default as useDashboardCoinOnhand } from "./useDashboardCoinOnhand";
