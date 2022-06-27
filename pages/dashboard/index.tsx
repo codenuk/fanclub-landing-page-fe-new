@@ -85,7 +85,7 @@ const DashboardPage: NextPageWithLayout = () => {
     >
       <LoadingModal open={loading} />
       <h2>Dashboard</h2>
-      <div className={styles.row}>
+      <div className={`${styles.row} ${styles.ipadIsColumn}`}>
         <div className={styles.flex50}>
           <div className={styles.smallBox}>
             <h6>จำนวนผู้ใช้งานทั้งหมด</h6>
@@ -152,7 +152,7 @@ const DashboardPage: NextPageWithLayout = () => {
         </div>
       </div>
 
-      <div className={styles.row}>
+      <div className={`${styles.row} ${styles.ipadIsColumn}`}>
         <div className={styles.flex50}>
           <div
             className={styles.largeBox}
