@@ -83,16 +83,14 @@ const Gashapon: React.FC<GashaponProps> = () => {
         />
         <div className={styles.wrapperText}>
           <h5 className={styles.row}>
-          กดเลย! แลกรับรูปคอลเลกชัน Wish Me Random Card “Wish me Limited Edition Card” 
-only 29,000 pcs.
+            กดเลย! แลกรับรูปคอลเลกชัน Wish Me Random Card “Wish me Limited
+            Edition Card” only 29,000 pcs.
           </h5>
           <div className={styles.icon}>
             <img src="/images/icon-gashapon.svg" alt="/images/gashapon.svg" />
             <p className={styles.detill}>Wish Me</p>
           </div>
-          <p className={styles.detill}>
-          Period: 1 Jun 2022 - 1 Dec 2022
-          </p>
+          <p className={styles.detill}>Period: 1 Jun 2022 - 1 Dec 2022</p>
           {/* <p className={styles.detill}>ระดับความหายาก</p> */}
           {!isAuth && isInit ? (
             <button
@@ -108,9 +106,23 @@ only 29,000 pcs.
               className={styles.customButton}
               type="button"
             >
-Random Now!
+              Random Now!
             </button>
           )}
+
+          <p style={{ margin: "20px 0" }}>
+            ในต้นเดือนกรกฏาคมนี้ ทาง Fandom App จะเปิดให้เข้าร่วมโหวต
+            การประกวดสาวงามแห่งเวที “ถิ่นไทยงาม”
+          </p>
+          <a href="https://www.news.fandom.co.th/2022/06/24/fandom-app-vote/">
+          <button
+            className={styles.customButton}
+            type="button"
+            style={{ width: '100px', height: '30px', fontSize: '16px' }}
+          >
+            คลิกที่นี้
+          </button>
+          </a>
         </div>
       </div>
 
