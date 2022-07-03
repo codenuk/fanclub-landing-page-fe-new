@@ -111,10 +111,9 @@ const Gashapon: React.FC<GashaponProps> = () => {
           )}
 
           <p style={{ margin: "20px 0" }}>
-            ในต้นเดือนกรกฏาคมนี้ ทาง Fandom App จะเปิดให้เข้าร่วมโหวต
-            การประกวดสาวงามแห่งเวที “ถิ่นไทยงาม”
+          ท่านสามารถ Download Fandom Application เพื่อใช้โหวต นางสาวถิ่นไทยงาม ในรางวัล Miss Fandom Popular Vote ได้แล้ววันนี้
           </p>
-          <a href="https://www.news.fandom.co.th/2022/06/24/fandom-app-vote/">
+          <a href="https://www.news.fandom.co.th/2022/07/02/fandom-app-vote-2/">
           <button
             className={styles.customButton}
             type="button"
