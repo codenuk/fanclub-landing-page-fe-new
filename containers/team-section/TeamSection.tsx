@@ -36,10 +36,9 @@ const mockTeamMembers = [
       photoUrl: "/images/team-4.png",
       name: "คุณธัญญาเรศ เองตระกูล",
       shortName: "(ที่ปรึกษาด้าน Entertainment)",
-      position: `ผู้อำนวยการศูนย์วิจัยนวัตกรรมดิจิทัล
-      มหาวิทยาลัยนเรศวร
-      ผู้เชี่ยวชาญด้าน AI และ Digital Platfrom      
-      `,
+      position: `ดารา นักแสดง, Founder BB clinic
+      Founder ESC Entertainment,
+      Co-Founder madamfin.com`,
     },
     {
       photoUrl: "/images/team-5.png",
