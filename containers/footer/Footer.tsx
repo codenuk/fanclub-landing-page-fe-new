@@ -104,6 +104,13 @@ const Footer: React.FC<FooterProps> = () => {
               >
                 Privacy policy
               </Typography>
+              <Typography
+                variant="body1"
+                onClick={() => router.push("https://forms.gle/6XPgdr9DTHxdaPHN8")}
+                style={{ cursor: "pointer" }}
+              >
+                Technical Support
+              </Typography>
             </InfoItemSection>
           </InfoSection>
         )}
