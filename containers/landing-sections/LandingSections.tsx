@@ -30,7 +30,7 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
               <h4 className={styles.fontSizeFourtyEight}>GET CLOSER TO YOUR</h4>
               <h4 className={styles.fontSizeFourtyEight}>FAVOURITE ARTISTS</h4>
               <h1>FREE 100 COINS</h1>
-              {!isAuth && isInit ? (
+              {!isAuth && isInit && (
                 <button
                   className={`${styles.customButton} ${styles.fontSizeFourtyEight}`}
                   style={{ maxWidth: "500px" }}
@@ -39,41 +39,6 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
                 >
                   REGISTER NOW!
                 </button>
-              ) : (
-                <>
-                  <p
-                    style={{
-                      color: "#FFEE56",
-                      fontSize: "18px",
-                      textAlign: "end",
-                    }}
-                  >
-                    กิจกรรมนางสาวถิ่นไทยงาม
-                  </p>
-                  <p
-                    style={{
-                      color: "#FFEE56",
-                      fontSize: "18px",
-                      textAlign: "end",
-                      marginTop: "10px"
-                    }}
-                  >
-                    เข้าร่วมโหวต “Miss Fandom Popular Vote”
-                  </p>
-                  <a href="https://www.news.fandom.co.th/vote/">
-                    <button
-                      className={styles.customButton}
-                      type="button"
-                      style={{
-                        width: "100px",
-                        height: "30px",
-                        fontSize: "16px",
-                      }}
-                    >
-                      คลิกที่นี้
-                    </button>
-                  </a>
-                </>
               )}
             </div>
             <div className={`${styles.column} ${styles.rightBox}`}>
