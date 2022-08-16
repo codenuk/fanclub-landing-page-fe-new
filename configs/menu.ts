@@ -11,18 +11,18 @@ export const navMenuConfigs = (translate: TranslateFunction): MenuConfig[] => [
     path: "/",
     title: translate("HOME"),
   },
-  {
-    path: "https://www.news.fandom.co.th/",
-    title: translate("BLOG"),
-  },
-  {
-    path: "/about-us",
-    title: translate("ABOUT_US"),
-  },
-  {
-    path: "/mystery-box",
-    title: "Mystery Box",
-  },
+  // {
+  //   path: "https://www.news.fandom.co.th/",
+  //   title: translate("BLOG"),
+  // },
+  // {
+  //   path: "/about-us",
+  //   title: translate("ABOUT_US"),
+  // },
+  // {
+  //   path: "/mystery-box",
+  //   title: "Mystery Box",
+  // },
 ];
 
 export const personalMenuConfigs = (translate: TranslateFunction) => [

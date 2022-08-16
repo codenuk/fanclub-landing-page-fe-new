@@ -31,14 +31,16 @@ const LandingSections: React.FC<LandingSectionsProps> = () => {
               <h4 className={styles.fontSizeFourtyEight}>FAVOURITE ARTISTS</h4>
               <h1>FREE 100 COINS</h1>
               {!isAuth && isInit && (
-                <button
-                  className={`${styles.customButton} ${styles.fontSizeFourtyEight}`}
-                  style={{ maxWidth: "500px" }}
-                  type="button"
-                  onClick={() => router.push("/sign-up")}
-                >
-                  REGISTER NOW!
-                </button>
+                <a href="https://www.fandom.co.th/" style={{ width: "100%" }}>
+                  <button
+                    className={`${styles.customButton} ${styles.fontSizeFourtyEight}`}
+                    style={{ maxWidth: "500px" }}
+                    type="button"
+                    // onClick={() => router.push("/sign-up")}
+                  >
+                    REGISTER NOW!
+                  </button>
+                </a>
               )}
             </div>
             <div className={`${styles.column} ${styles.rightBox}`}>

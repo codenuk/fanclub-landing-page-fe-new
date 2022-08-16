@@ -29,7 +29,7 @@ const AccountPage: NextPageWithLayout = () => {
       }}
     >
       <AccountDetail />
-      <ReferralProgram />
+      {/* <ReferralProgram /> */}
     </ContentWrapper>
   );
 };

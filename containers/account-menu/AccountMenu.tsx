@@ -31,9 +31,10 @@ const AccountMenuContainer: React.FC<AccountMenuContainerProps> = () => {
   ) : (
     <AccountMenuWrapper>
       <Box sx={registerBoxStyles}>
-        <Button sx={{ color: "white" }} onClick={handleRegister} variant="text">
+        {/* <Button sx={{ color: "white" }} onClick={handleRegister} variant="text">
           {translate("REGISTER")}
-        </Button>
+        </Button> */}
+        <a href="https://www.fandom.co.th/" style={{ color: "white" }}>{translate("REGISTER")}</a>
         <VerticalDivider />
       </Box>
       <LogInButton onClick={handleLogIn}>{translate("LOGIN")}</LogInButton>

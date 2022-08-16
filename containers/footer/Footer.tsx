@@ -90,13 +90,13 @@ const Footer: React.FC<FooterProps> = () => {
               >
                 Home
               </Typography>
-              <Typography
+              {/* <Typography
                 variant="body1"
                 onClick={() => router.push("/about-us")}
                 style={{ cursor: "pointer" }}
               >
                 About us
-              </Typography>
+              </Typography> */}
               <Typography
                 variant="body1"
                 onClick={() => router.push("/privacy-policy")}
